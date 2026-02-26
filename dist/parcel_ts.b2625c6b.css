@@ -1,18 +1,2 @@
-html {
-  font-size: 63.5%;
-}
 
-body {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  display: flex;
-}
-
-button {
-  margin-top: 1rem;
-  padding: .6rem 1.2rem;
-  font-weight: bold;
-}
 /*# sourceMappingURL=parcel_ts.b2625c6b.css.map */

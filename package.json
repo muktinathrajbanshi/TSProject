@@ -2,13 +2,9 @@
   "name": "parcel_ts",
   "version": "1.0.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "(npx parcel ./index.html) & npx parcel watch ./index.html"
+    "start": "npx parcel index.html",
+    "build": "npx parcel build index.html"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
     "parcel": "^2.16.4"
   }

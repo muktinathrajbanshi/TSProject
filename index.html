@@ -1,13 +1,34 @@
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <title>FocusFlow - Pomodoro Timer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <h1>Hello, TypeScript</h1>
-    <button class="clickMe">Click Me</button>
+    <div class="app">
+      <h1>⏱ FocusFlow</h1>
+      <p class="mode">FOCUS</p>
+
+      <div class="timer-circle">
+        <span id="time">25:00</span>
+      </div>
+
+      <div class="controls">
+        <button id="start">Start</button>
+        <button id="pause">Pause</button>
+        <button id="reset">Reset</button>
+      </div>
+
+      <div class="stats">
+        <p>Sessions Completed: <span id="sessions">0</span></p>
+      </div>
+
+      <div class="theme">
+        <button id="themeToggle">🌙 Toggle Theme</button>
+      </div>
+    </div>
 
     <script src="./src/index.ts"></script>
   </body>
