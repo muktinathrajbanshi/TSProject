@@ -104,3 +104,40 @@ body {
   border-radius: 6px;
   cursor: pointer;
 }
+
+@media (max-width: 480px) {
+  .app {
+    width: 90%;
+    padding: 2rem;
+  }
+
+  .timer-circle {
+    width: 180px;
+    height: 180px;
+    border-width: 6px;
+  }
+
+  #time {
+    font-size: 2.4rem;
+  }
+
+  .controls {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .controls button {
+    margin: 0;
+    width: 100%;
+  }
+
+  .stats {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .app {
+    width: 80%;
+  }
+}

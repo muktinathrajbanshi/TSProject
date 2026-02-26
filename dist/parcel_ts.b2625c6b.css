@@ -1,2 +1,145 @@
+:root {
+  --bg: #0f172a;
+  --card: #020617;
+  --text: #e5e7eb;
+  --primary: #38bdf8;
+  --accent: #22c55e;
+}
 
+.light {
+  --bg: #f8fafc;
+  --card: #fff;
+  --text: #020617;
+  --primary: #2563eb;
+  --accent: #16a34a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  display: flex;
+}
+
+.app {
+  background: var(--card);
+  text-align: center;
+  border-radius: 20px;
+  width: 350px;
+  padding: 3rem;
+  box-shadow: 0 0 30px #00000080;
+}
+
+.mode {
+  color: var(--primary);
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.timer-circle {
+  border: 8px solid var(--primary);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 220px;
+  margin: 1.5rem auto;
+  display: flex;
+}
+
+#time {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.controls {
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  display: flex;
+}
+
+.controls button {
+  cursor: pointer;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  flex: 1;
+  margin: 0 5px;
+  padding: .7rem;
+  font-weight: 600;
+}
+
+#pause {
+  background: #f59e0b;
+}
+
+#reset {
+  background: #ef4444;
+}
+
+.stats {
+  margin-top: 1.5rem;
+  font-size: 1.4rem;
+}
+
+.theme {
+  margin-top: 1.2rem;
+}
+
+.theme button {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  cursor: pointer;
+  background: none;
+  border-radius: 6px;
+  padding: .5rem 1rem;
+}
+
+@media (width <= 480px) {
+  .app {
+    width: 90%;
+    padding: 2rem;
+  }
+
+  .timer-circle {
+    border-width: 6px;
+    width: 180px;
+    height: 180px;
+  }
+
+  #time {
+    font-size: 2.4rem;
+  }
+
+  .controls {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .controls button {
+    width: 100%;
+    margin: 0;
+  }
+
+  .stats {
+    font-size: 1.2rem;
+  }
+}
+
+@media (width <= 768px) {
+  .app {
+    width: 80%;
+  }
+}
 /*# sourceMappingURL=parcel_ts.b2625c6b.css.map */
