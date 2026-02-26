@@ -1,0 +1,106 @@
+:root {
+  --bg: #0f172a;
+  --card: #020617;
+  --text: #e5e7eb;
+  --primary: #38bdf8;
+  --accent: #22c55e;
+}
+
+.light {
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --text: #020617;
+  --primary: #2563eb;
+  --accent: #16a34a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  background: var(--card);
+  padding: 3rem;
+  border-radius: 20px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.mode {
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+}
+
+.timer-circle {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: 8px solid var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem auto;
+}
+
+#time {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.controls button {
+  flex: 1;
+  margin: 0 5px;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  background: var(--primary);
+  color: white;
+}
+
+#pause {
+  background: #f59e0b;
+}
+#reset {
+  background: #ef4444;
+}
+
+.stats {
+  margin-top: 1.5rem;
+  font-size: 1.4rem;
+}
+
+.theme {
+  margin-top: 1.2rem;
+}
+
+.theme button {
+  background: transparent;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
